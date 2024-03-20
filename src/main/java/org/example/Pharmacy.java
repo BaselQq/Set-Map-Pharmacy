@@ -19,17 +19,12 @@ public class Pharmacy {
         this.medication = medication;
     }
 
-    public Medication addMedicationAsHashMap(String name, Medication Infos) {
-        Map<String, Medication> medicationMap = new HashMap<>();
-        return medicationMap.put(name, Infos);
-    }
-
     public long getCount() {
         return this.medication.size();
     }
 
     public void save(Medication medication) {
-
+        this.medication.put(medication.getName(), medication);
     }
 
     @Override
