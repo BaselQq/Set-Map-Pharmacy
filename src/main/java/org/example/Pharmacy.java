@@ -33,4 +33,12 @@ public class Pharmacy {
                 "medication=" + medication +
                 '}';
     }
+
+    public Medication find(String medicationName) {
+        return this.medication.get(medicationName);
+    }
+
+    public void delete(String medicationName) {
+        this.medication.remove(medicationName);
+    }
 }

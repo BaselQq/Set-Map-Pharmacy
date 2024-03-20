@@ -26,5 +26,11 @@ public class Main {
 
         System.out.println(pharmacy.getMedication());
         System.out.println(pharmacy.getCount());
+
+        System.out.println(pharmacy.find("med1"));
+
+        // remove one medication
+        pharmacy.delete("med1");
+        System.out.println(medications);
     }
 }
