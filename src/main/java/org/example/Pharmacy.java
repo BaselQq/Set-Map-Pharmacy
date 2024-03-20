@@ -41,4 +41,8 @@ public class Pharmacy {
     public void delete(String medicationName) {
         this.medication.remove(medicationName);
     }
+
+    public void printAll() {
+        System.out.println(this.medication);
+    }
 }

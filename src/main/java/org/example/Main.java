@@ -31,6 +31,7 @@ public class Main {
 
         // remove one medication
         pharmacy.delete("med1");
-        System.out.println(medications);
+
+        pharmacy.printAll();
     }
 }
