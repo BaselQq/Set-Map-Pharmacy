@@ -42,7 +42,10 @@ public class Pharmacy {
         this.medication.remove(medicationName);
     }
 
-    public void printAll() {
-        System.out.println(this.medication);
+    public void printAllMedications() {
+        for (Map.Entry<String, Medication> entry : this.medication.entrySet()) {
+            Medication medication = entry.getValue();
+            System.out.println("Name: " + medication.getName() + ", Price: " + medication.getPrice() + ", Availability: " + medication.isAvailability());
+        }
     }
 }
